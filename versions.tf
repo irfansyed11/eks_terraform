@@ -23,4 +23,9 @@ terraform {
       version = "~> 3.1.0"
     }
   }
+  backend "s3" {
+    bucket = "irfan-bucket"
+    key    = "eks_terraform"
+    region = "us-east-1"
+  }
 }
